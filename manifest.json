@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Transcript",
+  "version": "1.0.0",
+  "description": "Chrome extension for YouTube transcript",
+  "icons": {
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    },
+    "default_title": "YouTube Transcript"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://www.youtube.com/*"],
+      "js": ["transcript-api.js", "content.js"],
+      "css": ["content.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "permissions": ["activeTab", "scripting"],
+  "host_permissions": ["*://www.youtube.com/*"]
+}

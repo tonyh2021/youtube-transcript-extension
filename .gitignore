@@ -1,0 +1,30 @@
+# Dependencies
+node_modules/
+
+# Build / output
+dist/
+*.zip
+*.crx
+*.pem
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE / editor
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Logs and temp
+*.log
+.env
+.env.local
+.tmp/
+tmp/
+temp/
+
+# Local overrides (if you add any)
+*.local

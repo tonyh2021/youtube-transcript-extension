@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouTube Transcript</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div class="popup">
+      <div class="popup-header">
+        <h1>Transcript</h1>
+        <p id="status" class="status">Loading…</p>
+        <button id="copyBtn" type="button" class="btn btn-copy" disabled>
+          Copy
+        </button>
+        <button id="goToCurrentBtn" type="button" class="btn btn-goto">
+          Jump to current line
+        </button>
+      </div>
+      <div id="list" class="transcript-list"></div>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>

@@ -1,0 +1,6 @@
+{
+  "name": "youtube-transcript-extension",
+  "version": "1.0.0",
+  "description": "Chrome extension for YouTube transcript",
+  "private": true
+}
