@@ -9,6 +9,7 @@
   max-height: 90vh;
   background: var(--yt-spec-base-background, #0f0f0f);
   color: var(--yt-spec-text-primary, #f1f1f1);
+  border-radius: 12px;
   box-shadow:
     0 16px 44px rgba(0, 0, 0, 0.32),
     0 8px 22px rgba(0, 0, 0, 0.22),
